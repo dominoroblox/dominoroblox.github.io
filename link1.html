@@ -1,4 +1,19 @@
-
+<script>
+    // Function to store data with a timestamp and expiration time
+    function storeDataWithExpiration(key, expirationHours) {
+        var now = new Date().getTime(); // Get the current time in milliseconds
+        var expirationTime = now + (expirationHours * 60 * 60 * 1000); // Calculate expiration time in milliseconds
+        var item = {
+            timestamp: now,
+            expiration: expirationTime
+        };
+        localStorage.setItem(key, JSON.stringify(item));
+    }
+    
+    var key = "link1";
+    var expirationHours = 12;
+    storeDataWithExpiration(key, expirationHours);
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
