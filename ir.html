@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://d3qjvuswze4ycy.cloudfront.net/public/i_fr?it=4241747&key=5d7b7 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <!-- Block Robots from crawling this page -->
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Give the page a title -->
+    <title></title>
+
+    <!-- Include our jQuery version -->
+    <script src="jquery.min.js"></script>
+
+    <!-- Include our Font -->
+    <link href="css.css" rel="stylesheet">
+
+    <!-- Include FontAwesome -->
+    <link href="font-awesome(1).min.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="core.js"></script>
+
+    <!-- Color Picker -->
+    <script src="colorpicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="colorpicker.css">
+
+    <!-- Our Application's CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="151981978211ad81ad9b8c843e4b3c3052a8d6138c.css">
+
+    <script>
+
+        // What's the XRF token?
+        var xrfToken = "%XRF_TOKEN%";
+
+        // What Locker Settings were saved?
+        var savedLockerSettings = {"css":{"pc":{"body":{"background":{"color":"#ffffff","horizontal":"left","image":"","size":"cover","vertical":"top"}},"body-human-verification":{"background":{"color":"transparent","horizontal":"left","image":"","size":"cover","vertical":"top"},"background-hover":{"color":"transparent","horizontal":"left","image":"","size":"cover","vertical":"top"},"border-radius":"4","border-color":"#ffffff","border-color-hover":"#ffffff","border-width":"1","font-color":"#ffffff","font-color-hover":"#f7f7f7","font-size":"20","font-weight":"normal","margin-bottom":"0","margin-top":"0","padding-top":"14","padding-bottom":"14"},"body-offers":{"text-bottom-align":"center","text-bottom-color":"#959595","text-bottom-padding-bottom":"0","text-bottom-padding-top":"0","text-bottom-shadow":"transparent","text-bottom-size":"13","text-bottom-weight":"normal","text-top-align":"center","text-top-color":"#eaeaea","text-top-padding-bottom":"0","text-top-padding-top":"0","text-top-shadow":"transparent","text-top-size":"14","text-top-weight":"normal"},"body-offers-list":{"align":"center","background":{"color":"#ffffff","horizontal":"left","image":"","size":"cover","vertical":"top"},"background-hover":{"color":"#b1b1b1","horizontal":"left","image":"","size":"cover","vertical":"top"},"border-color":"#e2ffdb","border-radius":"6","border-width":"0","font-color":"#ffffff","font-color-hover":"#ffffff","font-size":"20","font-weight":"bold","margin-bottom":"10","margin-top":"0","padding-bottom":"9","padding-top":"9","text-align":"center","width":"23"},"header":{"background":{"color":"#ffffff","horizontal":"left","image":"","size":"cover","vertical":"top"},"border-color":"#ffffff","border-width":"1","border-box-shadow":"#d1d1d1","display":"none","font-align":"center","font-color":"#5f5f5f","font-size":"17","font-weight":"normal","padding-bottom":"18","padding-top":"21"},"footer":{"background":{"color":"#ffffff","horizontal":"left","image":"","size":"cover","vertical":"top"},"border-color":"#ffffff","border-width":"1","border-box-shadow":"#d1d1d1","display":"none","font-align":"center","font-color":"#5f5f5f","font-size":"10","font-weight":"normal","padding-bottom":"11","padding-top":"13"},"locker":{"border-radius":"2","box-shadow":"#ffffff","font":"Montserrat","width":"800"},"page":{"background":{"color":"transparent","horizontal":"left","image":"","size":"cover","vertical":"top"},"opacity":"100"}},"phone":{"body":{},"body-human-verification":{"border-radius":"4","border-width":"1","font-size":"20","font-weight":"normal","margin-bottom":"0","margin-top":"0","padding-top":"8","padding-bottom":"8"},"body-offers":{"text-bottom-padding-bottom":"0","text-bottom-padding-top":"0","text-bottom-size":"10","text-bottom-weight":"normal","text-top-padding-bottom":"0","text-top-padding-top":"0","text-top-size":"14","text-top-weight":"normal"},"body-offers-list":{"border-width":"1","font-size":"15","font-weight":"normal","margin-bottom":"7","margin-top":"0","padding-bottom":"7","padding-top":"7","width":"100"},"header":{"border-width":"1","font-size":"13","font-weight":"normal","padding-bottom":"10","padding-top":"13"},"footer":{"border-width":"1","font-size":"9","font-weight":"normal","padding-bottom":"8","padding-top":"5"},"locker":{},"page":{}}},"css-custom":"@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');\n\nbody {\n    margin: 0 !important;\n    padding: 99 !important;\n    overflow: hidden !important;\n}\n\n#my-locker,\nbody.mobile #my-locker {\n    font-family: 'Poppins', sans-serif !important;\n    background: transparent !important;\n    box-shadow: none !important;\n    margin: 0 !important;\n    max-width: 100% !important;\n    padding: 0 !important;\n    width: 100% !important;\n    position: absolute !important;\n    display: table !important;\n    height: 100% !important;\n    width: 100% !important;\n}\n\n#my-locker-background {\n    background: #fff !important;\n    opacity: 0 !important;\n}\n\n#my-locker-body {\n    background: transparent !important;\n    display: table-cell !important;\n    margin: 0 !important;\n    padding: 0 !important;\n    vertical-align: middle !important;\n}\n\n#my-locker-body-offers-list a {\n    background: #499bea !important;\n    background: -moz-linear-gradient(top, #00B06F 0%, #00B06F 100%) !important;\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)) !important;\n    background: -webkit-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;\n    background: -o-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;\n    background: -ms-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;\n    background: linear-gradient(to bottom, #00B06F 0%,#00B06F 100%) !important;\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ) !important;\n}\n\n#my-locker-body-offers-list a:hover {\n    opacity: 0.9;\n}\n\n#my-locker-body-human-verification {\n    padding: 0 6px !important;\n}\n\n#my-locker-body-human-verification button {\n    width: 100% !important;\n\n\n    background: #499bea !important;\n    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%) !important;\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)) !important;\n    background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;\n    background: -o-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;\n    background: -ms-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;\n    background: linear-gradient(to bottom, #499bea 0%,#207ce5 100%) !important;\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ) !important;\n}\n\n#my-locker-body-human-verification button:hover {\n    opacity: 0.9;\n}\n\n.additional-text {\n    color: #eaeaea;\n    font-size: 14px;\n    text-align: center;\n}\n\n.additional-text.top {\n    padding-bottom: 20px;\n}\n\n.additional-text.bottom {\n    padding-top: 20px;\n}\n\n/* Stars */\n\n#my-locker-body-offers-list a .stars {\n    color: #686868;\n    font-size: 14px;\n    font-weight: bold;\n    display: inline-block;\n    margin-left: 8px;\n}\n\n#my-locker-body-offers-list a .stars i {\n    color: #f3e07f;\n    font-size: 12px;\n}\n\n/* Difficulties */\n\n.difficulty {\n    background: red;\n    border-radius: 4px;\n    display: inline-block;\n    font-size: 12px;\n    padding: 1px 5px 3px;\n    margin: 0 0 -2px 12px;\n}\n\n.difficulty.easy {\n    background: #41c101;\n}\n\n.difficulty.medium {\n    background: #ce8c14;\n}\n\n.difficulty.hard {\n    background: #d60000;\n}\n\n@media (max-width: 350px) {\n    #my-locker-body-human-verification button {\n        font-size: 14px !important;    \n    }\n\n    #my-locker-body-offers-list a span {\n        font-size: 11px !important;\n    }\n}","google":{"analytics-tracking-id":"","event-tracking":"disabled","translate":"enabled"},"instructions":"- To show difficulties using stars or text, open the Custom JavaScript editor and change the \"difficultyType\" variable","javascript-custom":"// Human Verification text\nvar humanVerificationTextTop = \"\";\nvar humanVerificationTextBottom = \"\";\nvar difficultyType = \"none\"; // Change to \"none\", stars\", or \"difficulties\"\n\n/************************\n * DON'T EDIT BELOW HERE\n ************************/\n \nvar difficulties = ['Easy', 'Easy', 'Medium', 'Hard'];\nvar stars = [5, 4.5, 4, 4, 3, 3, 3, 2, 2, 1, 1, 1];\n\n$(document).ready(function() {\n    // Change the FontAwesome icon.\n    $('#my-locker-body-human-verification button i').removeClass('fa-spin fa-spinner').addClass('fa-lock');\n    \n    // When the Human Verification button is pressed.\n    $('#my-locker-body-human-verification button')\n        .off('click')\n        .on('click', function() {\n            $('#my-locker-body-human-verification').fadeOut(450, function() {\n                $('#my-locker-body-offers').fadeIn(950);\n            });\n    });\n    \n    // Add or remove the Human Verification texts.\n    $('.additional-text').remove();\n    $('#my-locker-body-human-verification').prepend('<div class=\"additional-text top\" style=\"display: '+(humanVerificationTextTop.length === 0 ? 'none' : 'block')+';\">'+humanVerificationTextTop+'</div>');\n    $('#my-locker-body-human-verification').append('<div class=\"additional-text bottom\" style=\"display: '+(humanVerificationTextBottom.length === 0 ? 'none' : 'block')+';\">'+humanVerificationTextBottom+'</div>');\n    \n    // What Offer is being looked at?\n    var offerIndex = 0;\n\n    // Add the difficulties/stars to each Offer.\n    $('#my-locker-body-offers-list a').each(function() {\n        // What difficulty is being used?\n        var difficulty = difficulties[offerIndex] || 'Hard';\n        var star = stars[offerIndex] || 1;\n\n        // Remove unnecessary elements.\n        $('.difficulty', this).remove();\n        $('.stars', this).remove();\n        \n        // Assemble an amount of Stars.\n        var starList = [];\n\n        for(var i = 1; i <= 5; i++) {\n            if (star >= i) {\n                starList.push('<i class=\"fa fa-star\"></i>');\n            }\n            else if (i - 0.5 == star) {\n                starList.push('<i class=\"fa fa-star-half-o\"></i>');\n            }\n            else {\n                starList.push('<i class=\"fa fa-star-o\"></i>');\n            }\n        }\n        \n        // If we're showing difficulties.\n        if (difficultyType == 'difficulties') {\n            $('> span', this).append('<div class=\"difficulty '+difficulty.toLowerCase()+'\">'+difficulty+'</div>');\n        }\n        // If we're showing Stars.\n        else if (difficultyType == 'stars') {\n            $('> span', this).append('<div class=\"stars\">'+starList.join('')+'</div>');\n        }\n        \n        // Increase the Offer index.\n        offerIndex++;\n    });\n});","offers":{"display":"4","min-offers":"1","min-payout":"1","on-complete":"redirect","redirect-url":"http://dlm0f6ot1zx75.cloudfront.net/public/redirect.php?lead_id=%lead_id%","show-tooltips":"disabled"},"other":{"alert-before-leaving":"disabled","disable-right-click":"enabled","esc-key-close":"disabled","human-verification":"disabled"},"text":{"header":"Complete an Offer to prove you aren't a Bot","human-verification":"Human Verification - Click Here","body-top":"","body-bottom":"","footer":"It takes 2-3 minutes for the prize to unlock in your Country."}};
+
+        // Our live Offers.
+
+
+
+        // Capture some of the custom variable data.
+        var editing = false;
+
+        // Determine which Offers to use.
+        var useOffers = (editing === true ? testOffers : liveOffers);
+
+        // What default variables were provided to us?
+        var baseLockerSettings = {
+            'css': {
+                'pc': {
+                    'body': {
+                        'background': {
+                            'color': '#ffffff',
+
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        }
+                    },
+                    'body-human-verification': {
+                        'background': {
+                          
+                            'color': '#fbfbfb',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'background-hover': {
+                            'color': '#b1b1b1',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'border-radius': '4',
+                        'border-color': '#b9b9b9',
+                        'border-color-hover': '#b9b9b9',
+                        'border-width': '1',
+                        'font-color': '#9c9c9c',
+                        'font-color-hover': '#565656',
+                        'font-size': '14',
+                        'font-weight': 'normal',
+                        'margin-bottom': '79',
+                        'margin-top': '84',
+                        'padding-top': '8',
+                        'padding-bottom': '8'
+                    },
+                    'body-offers': {
+                        'text-bottom-align': 'center',
+                        'text-bottom-color': '#959595',
+                        'text-bottom-padding-bottom': '17',
+                        'text-bottom-padding-top': '12',
+                        'text-bottom-shadow': 'transparent',
+                        'text-bottom-size': '13',
+                        'text-bottom-weight': 'normal',
+                        'text-top-align': 'center',
+                        'text-top-color': '#696969',
+                        'text-top-padding-bottom': '20',
+                        'text-top-padding-top': '21',
+                        'text-top-shadow': 'transparent',
+                        'text-top-size': '15',
+                        'text-top-weight': 'normal'
+                    },
+                    'body-offers-list': {
+                        'align': 'center',
+                        'background': {
+                            'color': '#fbfbfb',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'background-hover': {
+                            'color': '#b1b1b1',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'border-color': '#b9b9b9',
+                        'border-radius': '3',
+                        'border-width': '1',
+                        'font-color': '#9c9c9c',
+                        'font-color-hover': '#565656',
+                        'font-size': '13',
+                        'font-weight': 'normal',
+                        'margin-bottom': '4',
+                        'margin-top': '0',
+                        'padding-bottom': '9',
+                        'padding-top': '9',
+                        'text-align': 'center',
+                        'width': '50'
+                    },
+                    'header': {
+
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'border-color': '#ffffff',
+                        'border-width': '1',
+                        'border-box-shadow': '#d1d1d1',
+                        'display': 'block',
+                        'font-align': 'center',
+                        'font-color': '#5f5f5f',
+                        'font-size': '17',
+                        'font-weight': 'normal',
+                        'padding-bottom': '18',
+                        'padding-top': '21'
+                    },
+                    'footer': {
+                        'background': {
+                            'color': '#ffffff',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'border-color': '#ffffff',
+                        'border-width': '1',
+                        'border-box-shadow': '#d1d1d1',
+                        'display': 'block',
+                        'font-align': 'center',
+                        'font-color': '#5f5f5f',
+                        'font-size': '10',
+                        'font-weight': 'normal',
+                        'padding-bottom': '11',
+                        'padding-top': '13'
+                    },
+                    'locker': {
+                        'border-radius': '2',
+                        'box-shadow': '#292929',
+                        'font': 'Montserrat',
+                        'width': '800'
+                    },
+                    'page': {
+                        'background': {
+                            'color': '#464141',
+                            'horizontal': 'left',
+                            'image': '',
+                            'size': 'cover',
+                            'vertical': 'top'
+                        },
+                        'opacity': '65'
+                    }
+                },
+                'phone': {
+                    'body': {},
+                    'body-human-verification': {
+                        'border-radius': '4',
+                        'border-width': '1',
+                        'font-size': '11',
+                        'font-weight': 'normal',
+                        'margin-bottom': '57',
+                        'margin-top': '60',
+                        'padding-top': '8',
+                        'padding-bottom': '8'
+                    },
+                    'body-offers': {
+                        'text-bottom-padding-bottom': '15',
+                        'text-bottom-padding-top': '9',
+                        'text-bottom-size': '10',
+                        'text-bottom-weight': 'normal',
+                        'text-top-padding-bottom': '15',
+                        'text-top-padding-top': '19',
+                        'text-top-size': '11',
+                        'text-top-weight': 'normal'
+                    },
+                    'body-offers-list': {
+                        'border-width': '1',
+                        'font-size': '9',
+                        'font-weight': 'normal',
+                        'margin-bottom': '4',
+                        'margin-top': '0',
+                        'padding-bottom': '5',
+                        'padding-top': '6',
+                        'width': '50'
+                    },
+                    'header': {
+                        'border-width': '1',
+                        'font-size': '13',
+                        'font-weight': 'normal',
+                        'padding-bottom': '10',
+                        'padding-top': '13'
+                    },
+                    'footer': {
+                        'border-width': '1',
+                        'font-size': '9',
+                        'font-weight': 'normal',
+                        'padding-bottom': '8',
+                        'padding-top': '5'
+                    },
+                    'locker': {},
+                    'page': {}
+                }
+            },
+            'css-custom': '',
+            'google': {
+                'analytics-tracking-id': '',
+                'event-tracking': 'disabled',
+                'translate': 'enabled'
+            },
+            'javascript-custom': '',
+            'offers': {
+                'display': '5',
+                'min-offers': '1',
+                'min-payout': '1',
+                'on-complete': 'redirect',
+                'redirect-url': 'https://google.com',
+                'show-tooltips': 'disabled'
+            },
+            'other': {
+                'alert-before-leaving': 'disabled',
+                'disable-right-click': 'enabled',
+                'esc-key-close': 'disabled',
+                'human-verification': 'disabled'
+            },
+            'text': {
+                'header': "Complete an Offer to prove you aren't a Bot",
+                'human-verification': 'Verify Through Survey',
+                'body-top': 'Complete one of the Offers below to unlock your prize',
+                'body-bottom': 'Waiting for verification%dots%',
+                'footer': 'It takes 2-3 minutes for the prize to unlock in your Country.'
+            }
+        };
+
+        // Populate the Locker Settings appropriately.
+        function recursivelyGenerateSettings(needed, provided) {
+            var returning = {};
+
+            $.each(needed, function(key, value) {
+                if (typeof value == 'object') {
+                    returning[key] = recursivelyGenerateSettings(value, (key in provided ? provided[key] : {}));
+                }
+                else {
+                    returning[key] = (key in provided ? provided[key] : needed[key]);
+                }
+            });
+
+            return returning;
+        }
+
+        // If the custom Settings were provided as a string, try and convert it to a JSON Object.
+        if (typeof savedLockerSettings == 'string') {
+            try {
+                // Was the saved locker provided to us as valid JSON?
+                var jsonParse = JSON.parse(savedLockerSettings);
+
+                // If it's not a valid JSON object.
+                if (typeof jsonParse !== 'object' || !('css' in jsonParse)) {
+                    savedLockerSettings = {};
+                }
+            }
+            catch(error) {
+                savedLockerSettings = {};
+            }
+        }
+
+        // Retrieve the recursively generated settings.
+        var useLockerSettings = recursivelyGenerateSettings(baseLockerSettings, savedLockerSettings);
+
+    </script>
+
+    <!-- Load our Application's JavaScript file -->
+    <script src="./151999678694833b4c5a49a55ef7f9224b286820f0.js.download"></script>
+</head>
+
+<body class="theme-list mobile device-undefined" marginwidth="0" marginheight="0">
+
+<!-- Google Analytics Tracking Code -->
+<script>
+
+    // If Google Analytics is enabled.
+    if (editing === false && useLockerSettings['google']['analytics-tracking-id'].length > 0) {
+        /*
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', useLockerSettings['google']['analytics-tracking-id'], 'auto');
+        */
+    }
+
+</script>
+
+<!-- Our Google Translate Element -->
+<!--<div id="google_translate_element" style="display: none;"></div>-->
+
+<!-- BEGIN: Content Locker Background Overlay -->
+<div id="my-locker-background"></div>
+<!-- END: Content Locker Background Overlay -->
+
+
+<!-- BEGIN: Custom Content Locker -->
+<style id="my-locker-css">#my-locker-background { background: url() top left no-repeat transparent; } #my-locker-background { opacity: 1; } #my-locker { font-family: 'Montserrat', sans-serif !important; } #my-locker { box-shadow: 0px 1px 22px rgba(255, 255, 255, 0.56); } #my-locker { border-radius: 2px; } #my-locker { max-width: 800px; } #my-locker #my-locker-top { display: none; } #my-locker #my-locker-top { background: url() top left no-repeat #ffffff; } #my-locker #my-locker-top { border-bottom-color: #ffffff; } #my-locker #my-locker-top { border-bottom-width: 1px; } #my-locker #my-locker-top { box-shadow: 0px 2px 5px #d1d1d1; } #my-locker #my-locker-top { padding-top: 21px; } #my-locker #my-locker-top { padding-bottom: 18px; } #my-locker #my-locker-top span { text-align: center; } #my-locker #my-locker-top span { color: #5f5f5f; } #my-locker #my-locker-top span { font-size: 17px; } #my-locker #my-locker-top span { font-weight: normal; } #my-locker #my-locker-body { background: url() top left no-repeat #ffffff; } #my-locker #my-locker-body-human-verification button { background: url() top left no-repeat transparent; } #my-locker #my-locker-body-human-verification button:hover { background: url() top left no-repeat transparent; } #my-locker #my-locker-body-human-verification button { border-radius: 4px; } #my-locker #my-locker-body-human-verification button { border-color: #ffffff; } #my-locker #my-locker-body-human-verification button:hover { border-color: #ffffff; } #my-locker #my-locker-body-human-verification button { border-width: 1px; } #my-locker #my-locker-body-human-verification button { font-size: 20px; } #my-locker #my-locker-body-human-verification button { font-weight: normal; } #my-locker #my-locker-body-human-verification button { color: #ffffff; } #my-locker #my-locker-body-human-verification button:hover { color: #f7f7f7; } #my-locker #my-locker-body-human-verification button { padding-top: 14px; } #my-locker #my-locker-body-human-verification button { padding-bottom: 14px; } #my-locker #my-locker-body-human-verification { padding-top: 0px; } #my-locker #my-locker-body-human-verification { padding-bottom: 0px; } #my-locker .my-locker-body-text-top { text-align: center; } #my-locker .my-locker-body-text-top { color: #eaeaea; } #my-locker .my-locker-body-text-top { font-size: 14px; } #my-locker .my-locker-body-text-top { font-weight: normal; } #my-locker .my-locker-body-text-top { text-shadow: 1px 1px 2px transparent; } #my-locker .my-locker-body-text-top { padding-top: 0px; } #my-locker .my-locker-body-text-top { padding-bottom: 0px; } #my-locker .my-locker-body-text-bottom { text-align: center; } #my-locker .my-locker-body-text-bottom { color: #959595; } #my-locker .my-locker-body-text-bottom { font-size: 13px; } #my-locker .my-locker-body-text-bottom { font-weight: normal; } #my-locker .my-locker-body-text-bottom { text-shadow: 1px 1px 2px transparent; } #my-locker .my-locker-body-text-bottom { padding-top: 0px; } #my-locker .my-locker-body-text-bottom { padding-bottom: 0px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { text-align: center; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { width: 23%; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { background: url() top left no-repeat #ffffff; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a:hover { background: url() top left no-repeat #b1b1b1; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { border-radius: 6px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { border-color: #e2ffdb; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { border-width: 0px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { text-align: center; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { font-size: 20px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { font-weight: bold; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { color: #ffffff; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a:hover { color: #ffffff; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { margin-top: 0px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { margin-bottom: 10px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { padding-top: 9px; } #my-locker #my-locker-body-offers #my-locker-body-offers-list a { padding-bottom: 9px; } #my-locker #my-locker-bottom { display: none; } #my-locker #my-locker-bottom { background: url() top left no-repeat #ffffff; } #my-locker #my-locker-bottom { border-top-color: #ffffff; } #my-locker #my-locker-bottom { border-top-width: 1px; } #my-locker #my-locker-bottom { box-shadow: 0px -2px 5px #d1d1d1; } #my-locker #my-locker-bottom { padding-top: 13px; } #my-locker #my-locker-bottom { padding-bottom: 11px; } #my-locker #my-locker-bottom span { text-align: center; } #my-locker #my-locker-bottom span { color: #5f5f5f; } #my-locker #my-locker-bottom span { font-size: 10px; } #my-locker #my-locker-bottom span { font-weight: normal; } body.mobile #my-locker #my-locker-top { border-bottom-width: 1px; } body.mobile #my-locker #my-locker-top { padding-top: 13px; } body.mobile #my-locker #my-locker-top { padding-bottom: 10px; } body.mobile #my-locker #my-locker-top span { font-size: 13px; } body.mobile #my-locker #my-locker-top span { font-weight: normal; } body.mobile #my-locker #my-locker-body-human-verification button { border-radius: 4px; } body.mobile #my-locker #my-locker-body-human-verification button { border-width: 1px; } body.mobile #my-locker #my-locker-body-human-verification button { font-size: 20px; } body.mobile #my-locker #my-locker-body-human-verification button { font-weight: normal; } body.mobile #my-locker #my-locker-body-human-verification button { padding-top: 8px; } body.mobile #my-locker #my-locker-body-human-verification button { padding-bottom: 8px; } body.mobile #my-locker #my-locker-body-human-verification { padding-top: 0px; } body.mobile #my-locker #my-locker-body-human-verification { padding-bottom: 0px; } body.mobile #my-locker .my-locker-body-text-top { font-size: 14px; } body.mobile #my-locker .my-locker-body-text-top { font-weight: normal; } body.mobile #my-locker .my-locker-body-text-top { padding-top: 0px; } body.mobile #my-locker .my-locker-body-text-top { padding-bottom: 0px; } body.mobile #my-locker .my-locker-body-text-bottom { font-size: 10px; } body.mobile #my-locker .my-locker-body-text-bottom { font-weight: normal; } body.mobile #my-locker .my-locker-body-text-bottom { padding-top: 0px; } body.mobile #my-locker .my-locker-body-text-bottom { padding-bottom: 0px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { width: 100%; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { border-width: 1px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { font-size: 15px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { font-weight: normal; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { margin-top: 0px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { margin-bottom: 7px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { padding-top: 7px; } body.mobile #my-locker #my-locker-body-offers #my-locker-body-offers-list a { padding-bottom: 7px; } body.mobile #my-locker #my-locker-bottom { border-top-width: 1px; } body.mobile #my-locker #my-locker-bottom { padding-top: 5px; } body.mobile #my-locker #my-locker-bottom { padding-bottom: 8px; } body.mobile #my-locker #my-locker-bottom span { font-size: 9px; } body.mobile #my-locker #my-locker-bottom span { font-weight: normal; } body.mobile #my-locker { margin: 2% auto 0 !important; width: 95% !important; } body.device-phone #my-locker { margin: 39px 0 0 380px !important; width: 480px !important; }</style><script id="my-custom-javascript">// Human Verification text
+var humanVerificationTextTop = "";
+var humanVerificationTextBottom = "";
+var difficultyType = "none"; // Change to "none", stars", or "difficulties"
+
+/************************
+ * DON'T EDIT BELOW HERE
+ ************************/
+ 
+var difficulties = ['Easy', 'Easy', 'Medium', 'Hard'];
+var stars = [5, 4.5, 4, 4, 3, 3, 3, 2, 2, 1, 1, 1];
+
+$(document).ready(function() {
+    // Change the FontAwesome icon.
+    $('#my-locker-body-human-verification button i').removeClass('fa-spin fa-spinner').addClass('fa-lock');
+    
+    // When the Human Verification button is pressed.
+    $('#my-locker-body-human-verification button')
+        .off('click')
+        .on('click', function() {
+            $('#my-locker-body-human-verification').fadeOut(450, function() {
+                $('#my-locker-body-offers').fadeIn(950);
+            });
+    });
+    
+    // Add or remove the Human Verification texts.
+    $('.additional-text').remove();
+    $('#my-locker-body-human-verification').prepend('<div class="additional-text top" style="display: '+(humanVerificationTextTop.length === 0 ? 'none' : 'block')+';">'+humanVerificationTextTop+'</div>');
+    $('#my-locker-body-human-verification').append('<div class="additional-text bottom" style="display: '+(humanVerificationTextBottom.length === 0 ? 'none' : 'block')+';">'+humanVerificationTextBottom+'</div>');
+    
+    // What Offer is being looked at?
+    var offerIndex = 0;
+
+    // Add the difficulties/stars to each Offer.
+    $('#my-locker-body-offers-list a').each(function() {
+        // What difficulty is being used?
+        var difficulty = difficulties[offerIndex] || 'Hard';
+        var star = stars[offerIndex] || 1;
+
+        // Remove unnecessary elements.
+        $('.difficulty', this).remove();
+        $('.stars', this).remove();
+        
+        // Assemble an amount of Stars.
+        var starList = [];
+
+        for(var i = 1; i <= 5; i++) {
+            if (star >= i) {
+                starList.push('<i class="fa fa-star"></i>');
+            }
+            else if (i - 0.5 == star) {
+                starList.push('<i class="fa fa-star-half-o"></i>');
+            }
+            else {
+                starList.push('<i class="fa fa-star-o"></i>');
+            }
+        }
+        
+        // If we're showing difficulties.
+        if (difficultyType == 'difficulties') {
+            $('> span', this).append('<div class="difficulty '+difficulty.toLowerCase()+'">'+difficulty+'</div>');
+        }
+        // If we're showing Stars.
+        else if (difficultyType == 'stars') {
+            $('> span', this).append('<div class="stars">'+starList.join('')+'</div>');
+        }
+        
+        // Increase the Offer index.
+        offerIndex++;
+    });
+});</script><style id="my-custom-css">@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0 !important;
+    padding: 99 !important;
+    overflow: hidden !important;
+}
+
+#my-locker,
+body.mobile #my-locker {
+    font-family: 'Poppins', sans-serif !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    width: 100% !important;
+    position: absolute !important;
+    display: table !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#my-locker-background {
+    background: #fff !important;
+    opacity: 0 !important;
+}
+
+#my-locker-body {
+    background: transparent !important;
+    display: table-cell !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle !important;
+}
+
+#my-locker-body-offers-list a {
+    background: #499bea !important;
+    background: -moz-linear-gradient(top, #00B06F 0%, #00B06F 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)) !important;
+    background: -webkit-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;
+    background: -o-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;
+    background: -ms-linear-gradient(top, #00B06F 0%,#00B06F 100%) !important;
+    background: linear-gradient(to bottom, #00B06F 0%,#00B06F 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ) !important;
+}
+
+#my-locker-body-offers-list a:hover {
+    opacity: 0.9;
+}
+
+#my-locker-body-human-verification {
+    padding: 0 6px !important;
+}
+
+#my-locker-body-human-verification button {
+    width: 100% !important;
+
+
+    background: #499bea !important;
+    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)) !important;
+    background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;
+    background: -o-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;
+    background: -ms-linear-gradient(top, #499bea 0%,#207ce5 100%) !important;
+    background: linear-gradient(to bottom, #499bea 0%,#207ce5 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ) !important;
+}
+
+#my-locker-body-human-verification button:hover {
+    opacity: 0.9;
+}
+
+.additional-text {
+    color: #eaeaea;
+    font-size: 14px;
+    text-align: center;
+}
+
+.additional-text.top {
+    padding-bottom: 20px;
+}
+
+.additional-text.bottom {
+    padding-top: 20px;
+}
+
+/* Stars */
+
+#my-locker-body-offers-list a .stars {
+    color: #686868;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#my-locker-body-offers-list a .stars i {
+    color: #f3e07f;
+    font-size: 12px;
+}
+
+/* Difficulties */
+
+.difficulty {
+    background: red;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 5px 3px;
+    margin: 0 0 -2px 12px;
+}
+
+.difficulty.easy {
+    background: #41c101;
+}
+
+.difficulty.medium {
+    background: #ce8c14;
+}
+
+.difficulty.hard {
+    background: #d60000;
+}
+
+@media (max-width: 350px) {
+    #my-locker-body-human-verification button {
+        font-size: 14px !important;    
+    }
+
+    #my-locker-body-offers-list a span {
+        font-size: 11px !important;
+    }
+}</style><div id="my-locker">
+
+    <!-- BEGIN: Content Locker Header -->
+    <div id="my-locker-top">
+        <!--<i class="fa fa-question-circle"></i>-->
+        <span>Complete an Offer to prove you aren't a Bot</span>
+    </div>
+    <!-- END: Content Locker Header -->
+
+    <!-- BEGIN: Content Locker Body -->
+    <div id="my-locker-body">
+
+        <!-- BEGIN: Human Verification -->
+        <div id="my-locker-body-human-verification"><div class="additional-text top" style="display: none;"></div>
+            <button><i class="fa fa-lock"></i>Human Verification - Click Here</button>
+        <div class="additional-text bottom" style="display: none;"></div></div>
+        <!-- END: Human Verification -->
+
+        <!-- BEGIN: Content Locker Offers -->
+        <div id="my-locker-body-offers">
+            <div class="my-locker-body-text-top"></div>
+            <div id="my-locker-body-offers-list" align="center"><a href="https://rwrdzy.com/8015/960" target="_blank" data-payout="3.68" title="Download and run"><span>Get a $500 Lego Giftcard!</span></a><a href="https://rwrdzy.com/8015/989" class="notranslate offerURL" target="_blank" data-payout="1.60" title="Complete with valid info"><span>Get $1500 Cash!</span></a><a href="https://rwrdzy.com/8015/398" class="notranslate offerURL" target="_blank" data-payout="1.60" title="Complete with valid info"><span>Your Chance to get a $100 PlayStation Gift Card!</span></a>
+
+        <!-- END: Content Locker Offers -->
+
+    </div>
+    <!-- END: Content Locker Body -->
+
+    <!-- BEGIN: Locker Footer -->
+    <div id="my-locker-bottom">
+        <span>It takes 2-3 minutes for the prize to unlock in your Country.</span>
+    </div>
+    <!-- END: Locker Footer -->
+
+</div>
+<!-- END: Custom Content Locker -->
+
+
+
+<script>
+
+    // What file is being loaded?
+    var fileUrls = {
+        'editing': 'https://d266key948fg17.cloudfront.net/uploads/assets/1519819784efd1fb51e3a09545d6259de3ad2515f7.js',
+        //'themes': 'https://d266key948fg17.cloudfront.net/uploads/assets/1521379645c782a2afa5d83c9fa90847618c0f6610.js',
+        'themes': 'https://d266key948fg17.cloudfront.net/uploads/assets/15251987582db238732549eee063b62a7d50f1717f.js',
+        //'visiting': 'https://d266key948fg17.cloudfront.net/uploads/assets/1519819785e9ebf33574139d1ec0bab198158fa8c1.js'
+        //'visiting': 'https://d266key948fg17.cloudfront.net/uploads/assets/1528378365c61458d74e58133affe8bd44bc4cbf9c.js'
+        //'visiting': 'https://d266key948fg17.cloudfront.net/uploads/assets/152872119825f2a3bc2ee6e39f95c7fc4f6c741672.js'
+        'visiting': 'https://d266key948fg17.cloudfront.net/uploads/assets/1541527423a607b15a712c4823251c88682d1dbf54.js'
+    };
+
+    // Load our JavaScript file.
+    $.getScript(fileUrls[(editing === true ? 'editing' : 'visiting')]);
+
+</script>
+
+
+
+</body></html>
